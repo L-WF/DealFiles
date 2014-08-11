@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +21,7 @@ namespace DealFiles
             Console.WriteLine("进行中……");
             GetBeginNames();
             GetRepeatNames();
-            CreatSubDirs();
+            CreateSubDirs();
             MoveFiles();
             Console.WriteLine("已完成，按任意键退出……");
             Console.ReadKey();
@@ -67,7 +67,7 @@ namespace DealFiles
             repeatFileNames.Add(s);
         }
 
-        static void CreatSubDirs()
+        static void CreateSubDirs()
         {
             foreach (var repeatFileName in repeatFileNames)
             {
